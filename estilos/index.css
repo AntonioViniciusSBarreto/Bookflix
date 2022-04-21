@@ -1,0 +1,94 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+
+:root{
+    --vermelho:#e50914;
+    --preto:#141414;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    background: var(--preto);
+    font-family: 'Bebas Neue', cursive;
+    color: #ffffff;
+}
+header .Logo{
+    color: var(--vermelho);
+    font-family: 'Bebas Neue', cursive;
+    font-size: 70px;
+}
+
+header nav a{
+    text-decoration: none;
+    color: #aaa;
+    margin-right: 10px;
+}
+
+header nav a:hover{
+    color: white;
+}
+
+header .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.livro-principal{
+    font-size: 16px;
+    background-image: linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)), url('../img/VoltaaoMundoem80dias.jpg');
+    height: 500px;
+    background-size: cover;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+
+}
+
+.livro-principal .descricao{
+    margin-top: 5%;
+    margin-bottom: 10%;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.titulo{
+    font-size: 40px;
+
+}
+.botao{
+    background-color: var(--vermelho);
+    color: white;
+    border: none;
+    padding: 20px;
+    margin-right: 15px;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: .1s ease all;
+}
+
+.botao:hover{
+    outline: 3px solid white;
+}
+.botao i{
+    margin-right: 3px;
+}
+.container{
+    margin-left: 15px;
+}
+.livro-principal .container{
+    width: 65%;
+}
+.box-livro{
+    height: auto;
+    width: auto;
+    display: block;
+}
